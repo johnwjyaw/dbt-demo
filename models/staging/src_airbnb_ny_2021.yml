@@ -9,6 +9,16 @@ models:
         tests:
           - unique
           - not_null
+  - name: stg_properties
+    description: Property name and location data.
+    columns:
+      - name: id
+        description: Primary id for properties
+        tests:
+          - not_null
+  - name: stg_bookings
+    description: Property pricing and booking data. 
+
 
 sources:
   - name: airbnb_raw
