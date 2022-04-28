@@ -1,5 +1,15 @@
 version: 2
 
+models:
+  - name: stg_hosts
+    description: List of unique hosts with host id and host name.
+    columns: 
+      - name: host_id
+        description: Primary id for hosts.
+        tests:
+          - unique
+          - not_null
+
 sources:
   - name: airbnb_raw
     database: dbt_demo_raw
