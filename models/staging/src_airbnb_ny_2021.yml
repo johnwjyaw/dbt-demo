@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: airbnb_raw
+    database: dbt_demo_raw
+    schema: public
+    tables:
+      - name: airbnb_ny_2021
